@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Kos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rKk/RU4LR0rMD+J2XWoZHcGbeEew9UZdt7fN/knNq5clR5JNQFUnP7uU6tHdmjPW" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@6.5.8/swiper-bundle.min.js"></script>
+    <script src="./js-1/main.js"></script>
+    <link rel="stylesheet" href="./css-1/style.css" href="./landing.html" href="./recipe-page.html">
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <img src="./assets-1/images/cp-white2.png" alt="dapurkos" width="200px" height="70px"> 
+        </div>
+        <form action="search" method="post" class="search-box">
+            <input id="searchInput" type="text" placeholder="Mau makan apa hari ini...">
+            <button id="search-btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          
+          <nav class="menu" id="menu">
+            <a href="#landing">Beranda</a>
+            <a href="#tentangkami">Tentang Kami</a>
+            <a href="./recipe-page.html">Resep</a>
+            <a href="#carousel">Tips</a>
+          </nav>
+          
+      </header>
+
+    <div class="wrapper">
+        <section id="landing">
+            <div class="home">
+                <h2 id="home">Menu Variatif, Resep Praktis</h2>
+                <p>Temukan berbagai varian hidangan yang lezat dengan petunjuk yang mudah diikuti.</p>
+                <a href="./recipe-page.html" class="button">MULAI</a>            
+            </div>
+            <div class="home">
+                <img src="./assets-1/images/beranda.png" alt="beranda">
+            </div>      
+        </section>
+    </div>
+
+    <div class="carousel">
+    <section id="carousel">
+        <!-- list item -->
+        <div class="list">
+            <div class="item">
+                <img src="./assets-1/images/article1.png">
+                <div class="content">
+                    <div class="title">Cara Cepat Mengupas Bawang Putih Tanpa Pisau</div>
+                    <p>Bawang putih sudah menjadi salah satu bumbu wajib di dapur. <br> Aroma khasnya membuat sebuah hidangan menjadi sedap.</p>
+                    <div class="buttons">
+                        <button><a href="./artikel1.html">Lihat Artikel</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets-1/images/article2.png">
+                <div class="content">
+                    <div class="title">Cara Tepat Mencuci Teflon Supaya Awet</div>
+                    <p>Teflon yang dilengkapi lapisan anti lengket menjadi salah satu <br> alat memasak yang wajib ada di dapur. Berikut tips supaya teflon tahan lama.</p>
+                    <div class="buttons">
+                        <button><a href="./artikel2.html">Lihat Artikel</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets-1/images/article3.png">
+                <div class="content">
+                    <div class="title">Tips Membuat Kuning Telur Rebus Setengah Matang</div>
+                    <p>Telur merupakan makanan kaya akan protein yang menjadi favorit <br> banyak orang. Telur setengah matang menjadi salah satu cara <br> penyajian yang  sedang tren saat ini.</p>
+                    <div class="buttons">
+                        <button><a href="./artikel3.html">Lihat Artikel</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- list thumnail -->
+        <!-- <div class="thumbnail">
+            <div class="item">
+                <img src="./assets-1/images/article1.png">
+                <div class="content">
+                    <div class="title">
+                        Cara Cepat Mengupas Bawang Putih Tanpa Pisau
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets-1/images/article2.png">
+                <div class="content">
+                    <div class="title">
+                        Cara Tepat Mencuci Teflon Supaya Awet
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./assets-1/images/article3.png">
+                <div class="content">
+                    <div class="title">
+                        Buat Kuning Telur Anda Lembut Saat Direbus Dengan Cara Ini!
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- next prev -->
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="time"></div>
+    </section>
+    </div>
+ 
+
+    <div class="wrapper">
+        <div class="tentangkami">
+            <h2 id="tentangkami">Tentang Kami</h2>
+            <p>Selamat datang di Dapur Kos, rumahnya resep masakan praktis dan menu variatif khusus untuk anak kos! Kami berkomitmen untuk menyediakan inspirasi masakan yang sederhana, lezat, dan sesuai dengan gaya hidup Anda yang sibuk.</p>
+        </div>
+        <div class="imgtentangkami">
+            <img src="./assets-1/images/tentangkami.png" alt="tentangKami" width="100%">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="siapakami">
+            <h2 id="siapakami">Siapa Kami</h2>
+            <p>Dapur Kos lahir dari keinginan untuk membantu anak kos menjalani kehidupan sehari-hari dengan menyajikan pilihan menu yang tidak hanya nikmat, tetapi juga mudah disiapkan. Tim kami terdiri dari para pecinta masak yang memahami kebutuhan akan resep yang praktis dan bahan yang terjangkau.</p>
+        </div>
+        <div class="imgsiapakami">
+            <img src="./assets-1/images/siapakami.png" alt="siapaKami" width="100%">
+        </div>
+    </div>
+
+    <div class="wrapper">
+    <div class="container">
+        <img src="./assets-1/images/visi.png" alt="Gambar Kiri" class="gambar-kiri">
+        <img src="./assets-1/images/isivisi.png" alt="Gambar Kanan" class="gambar-kanan">
+    </div>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="./assets-1/images/cp-white2.png" alt="dapurkos" width=200px; height="70px"> 
+        </div>
+            <div class="logo-medsos">
+                <a href="https://www.instagram.com/dapurkos.id"><img src="./assets-1/images/instagram.png" alt="Instagram" width="60px" height="60px"></a>
+                <a href="https://twitter.com/DapurkosI36813?t=ekE_EO3BJtfQLChJYfm06A&s=08"><img src="./assets-1/images/twitter.png" alt="Twitter" width="60px" height="60px"></a>
+                <a href="https://maps.app.goo.gl/9boq9Z3ivFLuBvaBA"><img src="./assets-1/images/maps.png" alt="Location" width="60px" height="60px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ambil elemen input pencarian
+        var searchInput = document.getElementById('searchInput');
+    
+        // Ambil semua elemen resep
+        var recipes = document.querySelectorAll('.item');
+    
+        function performSearch() {
+            var searchTerm = searchInput.value.trim().toLowerCase();
+            var found = false;
+    
+            recipes.forEach(function (recipe, index) {
+                var recipeTitle = recipe.querySelector('.title').textContent.toLowerCase();
+                var recipeIngredients = recipe.querySelector('p').textContent.toLowerCase();
+    
+                // Cek apakah judul atau bahan mengandung kata kunci pencarian
+                if (recipeTitle.includes(searchTerm) || recipeIngredients.includes(searchTerm)) {
+                    recipe.classList.remove('hide');
+                    // Tambahkan logika geser slide di sini jika menggunakan swiper
+                    found = true;
+                } else {
+                    recipe.classList.add('hide');
+                }
+            });
+    
+            // Tambahkan logika geser slider kembali ke slide pertama jika tidak ada resep yang cocok
+            if (!found) {
+                // Geser slider kembali ke slide pertama di sini jika menggunakan swiper
+            }
+        }
+    
+        searchInput.addEventListener('input', function () {
+            performSearch();
+        });
+    
+        searchInput.addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                performSearch();
+            }
+        });
+    </script>
+    <!-- <script>
+        function performSearch() {
+            var searchTerm = searchInput.value.trim().toLowerCase();
+            var found = false;
+
+            recipes.forEach(function (recipe, index) {
+                var recipeTitle = recipe.querySelector('h2').textContent.toLowerCase();
+                var recipeIngredients = recipe.querySelector('p').textContent.toLowerCase();
+
+                // Cek apakah judul atau bahan mengandung kata kunci pencarian
+                if (recipeTitle.includes(searchTerm) || recipeIngredients.includes(searchTerm)) {
+                    recipe.classList.remove('hide');
+                    // Geser slide ke slide pertama jika resep cocok dan belum di slide pertama
+                    if (index !== 0 && !found) {
+                        swiper.slideTo(index);
+                    }
+                    found = true;
+                } else {
+                    recipe.classList.add('hide');
+                }
+            });
+
+            // Geser slider kembali ke slide pertama jika tidak ada resep yang cocok
+            if (!found) {
+                swiper.slideTo(0);
+            }
+        }
+
+        searchInput.addEventListener('input', function () {
+            performSearch();
+        });
+
+        searchInput.addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Mencegah form dari pengiriman default
+                performSearch();
+            }
+        });
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-rKk/RU4LR0rMD+J2XWoZHcGbeEew9UZdt7fN/knNq5clR5JNQFUnP7uU6tHdmjPW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="./js-1/main.js"></script>
+    <link rel="stylesheet" href="./css-1/style.css" href="./landing.html" href="./landing.html#carousel">
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <img src="./assets-1/images/cp-white2.png" alt="dapurkos" width=200px; height="70px"> 
+        </div>
+        <form action="search" method="post" class="search-box">
+          <input type="text" id="searchRecipe" placeholder="Cari resep...">
+          <button id="search-btn" type="button" onclick="searchRecipe()"><i class="fas fa-search"></i></button>
+      </form>
+      
+        <!-- <form action="search" method="post" class="search-box">
+            <input type="text" id="searchRecipe" placeholder="Mau makan apa hari ini...">
+            <button id="search-btn" type="button" onclick="searchRecipe()"><i class="fas fa-search"></i></button>
+        </form> -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          
+          <nav class="menu" id="menu">
+            <a href="./landing.html#landing">Beranda</a>
+            <a href="./landing.html#tentangkami">Tentang Kami</a>
+            <a href="./recipe-page.html">Resep</a>
+            <a href="./landing.html#carousel">Tips</a>
+          </nav>
+      </header>
+      
+      <div class="resep">
+        <h2 id="recipe">RESEP MAKANAN</h2>
+        <p id="recipe2">Inilah tempatnya segala resep masakan anak kos! dapurkos telah siapkan beragam hidangan seru bergaya rumahan, tepat sebagai masakan sehari-hari.</p>
+      </div>
+     
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep1.png" width="200px" height="200px">
+            <h2>Mie Goreng</h2>
+            <p>Mie, Sosis, Wortel, Sawi</p>
+            <a href="./resep1.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep2.png" width="200px" height="200px">
+            <h2>Kwetiaw Goreng</h2>
+            <p>Kwetiaw, Telur, Sawi, Daun Bawang</p>
+            <a href="./resep2.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep3.png" width="165px" height="165px">
+            <h2>Nasi Goreng</h2>
+            <p>Nasi, Telur, Daun Bawang, Bawang Bombay</p>
+            <a href="./resep3.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep4.png" width="165px" height="165px">
+            <h2>Ayam Fillet</h2>
+            <p>Nasi, Ayam Fillet, Saus Teriyaki, Tomat</p>
+            <a href="./resep4.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep5.png" width="200px" height="200px">
+            <h2>Egg Sandwich</h2>
+            <p>Roti Tawar, Telur, Mentega</p>
+            <a href="./resep5.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep6.png" width="190px" height="200px">
+            <h2>Tumis Kangkung</h2>
+            <p>Kangkung, Bawang Putih, Cabai Merah</p>
+            <a href="./resep6.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep7.png" width="190px" height="200px">
+            <h2>Sayur Bayam</h2>
+            <p>Bayam, Jagung, Wortel</p>
+            <a href="./resep7.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep8.png" width="190px" height="200px">
+            <h2>Tumis Buncis</h2>
+            <p>Buncis, Tempe, Cabai Merah</p>
+            <a href="./resep8.html" class="recipe-button">Lihat Resep</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets-1/images/resep9.png" width="190px" height="200px">
+            <h2>Penne Cheese Pasta</h2>
+            <p>Penne Pasta, Keju, Sosis</p>
+            <a href="./resep9.html" class="recipe-button">Lihat Resep</a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      <footer>
+        <div class="logo">
+            <img src="./assets-1/images/cp-white2.png" alt="dapurkos" width=200px; height="80px"> 
+        </div>
+            <div class="logo-medsos">
+                <a href="https://www.instagram.com/dapurkos.id"><img src="./assets-1/images/instagram.png" alt="Instagram" width="60px" height="60px"></a>
+                <a href="https://twitter.com/DapurkosI36813?t=ekE_EO3BJtfQLChJYfm06A&s=08"><img src="./assets-1/images/twitter.png" alt="Twitter" width="60px" height="60px"></a>
+                <a href="https://maps.app.goo.gl/9boq9Z3ivFLuBvaBA"><img src="./assets-1/images/maps.png" alt="Location" width="60px" height="60px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var searchInput = document.getElementById('searchRecipe');
+          var swiper = new Swiper('.mySwiper', {
+              slidesPerView: 4,
+              spaceBetween: 30,
+              freeMode: true,
+              cssMode: true,
+              navigation: {
+                  nextEl: '.swiper-button-next',
+                  prevEl: '.swiper-button-prev',
+                  clickable: true,
+              },
+              pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+              },
+              mousewheel: true,
+              keyboard: true, // Ganti Keyboard ke lowercase
+          });
+  
+          var recipes = document.querySelectorAll('.swiper-slide');
+  
+          function performSearch() {
+              var searchTerm = searchInput.value.trim().toLowerCase();
+              var found = false;
+  
+              recipes.forEach(function (recipe, index) {
+                  var recipeTitle = recipe.querySelector('h2').textContent.toLowerCase();
+                  var recipeIngredients = recipe.querySelector('p').textContent.toLowerCase();
+  
+                  // Cek apakah judul atau bahan mengandung kata kunci pencarian
+                  if (recipeTitle.includes(searchTerm) || recipeIngredients.includes(searchTerm)) {
+                      recipe.classList.remove('hide');
+                      // Geser slide ke slide pertama jika resep cocok dan belum di slide pertama
+                      if (index !== 0 && !found) {
+                          swiper.slideTo(index);
+                      }
+                      found = true;
+                  } else {
+                      recipe.classList.add('hide');
+                  }
+              });
+  
+              // Geser slider kembali ke slide pertama jika tidak ada resep yang cocok
+              if (!found) {
+                  swiper.slideTo(0);
+              }
+          }
+  
+          searchInput.addEventListener('input', function () {
+              performSearch();
+          });
+  
+          searchInput.addEventListener('keypress', function (event) {
+              if (event.key === 'Enter') {
+                  event.preventDefault(); // Mencegah form dari pengiriman default
+                  performSearch();
+              }
+          });
+      });
+  </script>
+</body>
+</html>
